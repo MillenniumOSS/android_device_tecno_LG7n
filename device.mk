@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/tecno/LG7n
 KERNEL_PATH := $(DEVICE_PATH)-kernel
+COMMON_GKI_PATH := device/millennium/common-kernel
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
