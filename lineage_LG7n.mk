@@ -26,3 +26,41 @@ PRODUCT_GMS_CLIENTID_BASE := android-transsion
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=LG7n \
     BuildFingerprint=TECNO/LG7n-GL/TECNO-LG7n:12/SP1A.210812.016/240530V1767:user/release-keys
+
+# AxionAOSP Flags
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := Shirayuki39
+AXION_PROCESSOR := Helio_G99
+PRODUCT_NO_CAMERA := false
+BYPASS_CHARGE_SUPPORTED := false
+
+# Define small and big core groups
+AXION_CPU_SMALL_CORES := 0,1,2,3,4,5
+AXION_CPU_BIG_CORES := 6,7
+
+## CPUsets configuration
+# CPUset used for background cpusets 
+AXION_CPU_BG := 0-2
+
+# CPUset used for foreground cpusets
+AXION_CPU_FG := 2-7
+
+# All CPU Cores, will be used for restoration
+AXION_ALL_CORES := 0-7
+
+# CPUset that will be used when limiting background cpusets
+AXION_CPU_LIMIT_BG := 0-1
+
+# CPUset that will be used when limiting critical cpusets for UI
+AXION_CPU_LIMIT_UI := 2-5
+
+# CPUset that will be used for critical display processes
+AXION_CPU_DISPLAY := 6-7
+
+# Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue 
+PERF_ANIM_OVERRIDE := true
+
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
