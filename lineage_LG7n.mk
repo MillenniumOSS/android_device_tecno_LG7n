@@ -35,29 +35,6 @@ AXION_PROCESSOR := Helio_G99
 PRODUCT_NO_CAMERA := false
 BYPASS_CHARGE_SUPPORTED := false
 
-# Define small and big core groups
-AXION_CPU_SMALL_CORES := 0,1,2,3,4,5
-AXION_CPU_BIG_CORES := 6,7
-
-## CPUsets configuration
-# CPUset used for background cpusets 
-AXION_CPU_BG := 0-2
-
-# CPUset used for foreground cpusets
-AXION_CPU_FG := 2-7
-
-# All CPU Cores, will be used for restoration
-AXION_ALL_CORES := 0-7
-
-# CPUset that will be used when limiting background cpusets
-AXION_CPU_LIMIT_BG := 0-1
-
-# CPUset that will be used when limiting critical cpusets for UI
-AXION_CPU_LIMIT_UI := 2-5
-
-# CPUset that will be used for critical display processes
-AXION_CPU_DISPLAY := 6-7
-
 # Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue 
 PERF_ANIM_OVERRIDE := true
 
