@@ -217,6 +217,18 @@ vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/wifi.cfg
 vendor/firmware/WMT_SOC.cfg
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/bin/hw/vendor.fptool.fingerprint@2.0-service
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/init/vendor.fptool.fingerprint@2.0-service.rc
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+vendor/etc/fsfp-config.xml
+vendor/lib64/hw/fsfingerprint.default.so;FIX_SONAME
+vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so
+vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
+vendor/lib64/vendor.fptool.fingerprint@2.0.so
+
 # mcRegistry
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
