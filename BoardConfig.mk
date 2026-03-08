@@ -42,7 +42,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dl
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_dlkm/*.ko)
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := LG7n,TECNO-LG7n,lg7n
+TARGET_OTA_ASSERT_DEVICE := LG7n,lg7n
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
