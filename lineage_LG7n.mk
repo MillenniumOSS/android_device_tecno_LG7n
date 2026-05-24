@@ -34,25 +34,19 @@ AXION_MAINTAINER := Shirayuki39
 AXION_PROCESSOR := Helio_G99
 PRODUCT_NO_CAMERA := false
 BYPASS_CHARGE_SUPPORTED := false
-TARGET_USES_USLMK := false
 
 # Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue 
 PERF_ANIM_OVERRIDE := true
 
 # CPU governor support
-PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := schedutil
+PERF_GOV_SUPPORTED := false
+PERF_DEFAULT_GOV := reflex
 
 # AxionFX
 TARGET_INCLUDE_AXFX := true
 
 # GMS
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := true
+TARGET_INCLUDE_PARTNER_SETUP := true
+TARGET_INCLUDE_GOOGLE_TELECOMM := true
 PRODUCT_PACKAGES += \
-   LatinIMEGooglePrebuilt \
-   CalendarGooglePrebuilt \
-   GoogleContacts \
-   GoogleDialer \
-   PrebuiltBugle \
-   com.google.android.dialer.support
+   CalendarGooglePrebuilt
