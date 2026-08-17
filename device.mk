@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayLG7n
 
 # Shipping API level
+BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Soong namespaces
